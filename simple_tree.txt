@@ -1,0 +1,39 @@
+.
+├── conf
+│   ├── base
+│   │   ├── catalog.yml
+│   │   └── parameters.yml
+│   └── local
+│       └── credentials.yml
+├── data
+│   ├── 01_raw
+│   │   └── catfood_dataset.csv
+│   ├── 02_intermediate
+│   ├── 03_primary
+│   ├── 04_feature
+│   ├── 05_model_input
+│   │   └── model_input_table.csv
+│   ├── 06_models
+│   │   └── trained_model.pkl
+│   │       └── 2022-02-16T11.34.26.813Z
+│   │           └── trained_model.pkl
+│   ├── 07_model_output
+│   └── 08_reporting
+│       └── confusion_matrix.png
+└── src
+    ├── catfood
+    │   ├── pipeline_registry.py
+    │   └── pipelines
+    │       ├── data_processing
+    │       │   ├── nodes.py
+    │       │   └── pipeline.py
+    │       └── data_science
+    │           ├── nodes.py
+    │           └── pipeline.py
+    └── tests
+        ├── pipelines
+        │   ├── data_processing
+        │   │   └── test_nodes.py
+        │   └── data_science
+        │       └── test_nodes.py
+        └── test_run.py

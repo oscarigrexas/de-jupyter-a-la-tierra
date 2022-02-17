@@ -1,0 +1,15 @@
+# Model params
+multi_class: multinomial
+solver: newton-cg
+target: nutrition_paws
+features:
+  - dma_ash
+  - dma_cals
+  - dma_carbs
+  - dma_prot
+  - ga_moist
+
+# Model testing params
+test_size: 0.2
+random_state: 3
+stratify: true
