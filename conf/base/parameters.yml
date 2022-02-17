@@ -13,3 +13,11 @@ features:
 test_size: 0.2
 random_state: 3
 stratify: true
+
+# Prediction placeholders
+prediction_features:
+  dma_ash: 0.0
+  dma_cals: 0.0
+  dma_carbs: 0.0
+  dma_prot: 0.0
+  ga_moist: 0.0

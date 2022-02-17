@@ -34,7 +34,7 @@ def evaluate_model(
     y_pred = trained_model.predict(X_test)
     logger = logging.getLogger(__name__)
     class_rep = classification_report(y_true=y_test, y_pred=y_pred)
-    logger.info(class_rep)
+    logger.info(f"\n{class_rep}")
     f, ax = plt.subplots()
     sns.heatmap(
         data=confusion_matrix(y_test, y_pred), square=True, annot=True, fmt="d", ax=ax
