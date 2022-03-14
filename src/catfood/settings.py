@@ -28,9 +28,10 @@
 
 """Project settings."""
 from catfood.hooks import ProjectHooks
+from catfood.data_validation.hooks import DataValidationHooks
 
 # Instantiate and list your project hooks here
-HOOKS = (ProjectHooks(),)
+HOOKS = (ProjectHooks(), DataValidationHooks())
 
 # List the installed plugins for which to disable auto-registry
 # DISABLE_HOOKS_FOR_PLUGINS = ("kedro-viz",)

@@ -1,4 +1,5 @@
 black==21.5b1
+dynaconf==3.1.5
 flake8>=3.7.9, <4.0
 ipython~=7.0
 isort~=5.0
@@ -8,7 +9,9 @@ jupyterlab~=3.0
 kedro[pandas.CSVDataSet,pandas.ExcelDataSet]==0.17.4
 kedro-telemetry~=0.1.0
 kedro-viz~=3.1
+matplotlib
 nbstripout~=0.4
+pandera
 pytest-cov~=2.5
 pytest-mock>=1.7.1, <2.0
 pytest~=6.2
