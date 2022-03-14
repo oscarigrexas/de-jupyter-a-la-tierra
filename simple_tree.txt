@@ -27,7 +27,10 @@
     │       ├── data_processing
     │       │   ├── nodes.py
     │       │   └── pipeline.py
-    │       └── data_science
+    │       ├── data_science
+    │       │   ├── nodes.py
+    │       │   └── pipeline.py
+    │       └── prediction
     │           ├── nodes.py
     │           └── pipeline.py
     └── tests
