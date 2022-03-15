@@ -18,3 +18,6 @@ confusion_matrix:
   type: matplotlib.MatplotlibWriter
   filepath: data/08_reporting/confusion_matrix.png
   layer: reporting
+
+classification_accuracy:
+  type: kedro_mlflow.io.metrics.MlflowMetricDataSet

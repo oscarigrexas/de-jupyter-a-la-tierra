@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 from sklearn.model_selection import train_test_split
 
 
@@ -40,4 +40,4 @@ def evaluate_model(
         data=confusion_matrix(y_test, y_pred), square=True, annot=True, fmt="d", ax=ax
     )
     ax.set_ylim([5, 0])
-    return f
+    return f, accuracy_score(y_test, y_pred)
