@@ -40,7 +40,7 @@ def predict_score(
         extra_params={"prediction_features": dict(nutritional_info)},
     ) as session:
         output = session.run(pipeline_name="pred")
-    return NutritionalScore(score=output["score"])
+    return NutritionalScore(score=output["predicted_score"])
 
 
 def run():
